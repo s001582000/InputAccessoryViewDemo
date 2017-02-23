@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         textMessage.inputAccessoryView = contentView
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,6 +27,10 @@ class ViewController: UIViewController {
         textMessage.resignFirstResponder()
     }
 
+    @IBAction func btnOnClick(_ sender: UIButton) {
+        textMessage.text = sender.currentTitle
+    }
+    
     
 
 }
