@@ -10,27 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var contentView: UIView!
+    var followView:KeyboardFollowView!
     @IBOutlet weak var textMessage: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        textMessage.inputAccessoryView = contentView
-        
+         followView = KeyboardFollowView(tf: textMessage)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
         
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         textMessage.resignFirstResponder()
     }
-
-    @IBAction func btnOnClick(_ sender: UIButton) {
-        textMessage.text = sender.currentTitle
+    
+    @IBAction func tfDidEndOnExit(_ sender: UITextField) {
+        sender.resignFirstResponder()
     }
-    
-    
 
 }

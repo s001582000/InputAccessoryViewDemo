@@ -11,7 +11,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="InputAccessoryViewDemo" customModuleProvider="target">
             <connections>
-                <outlet property="contentView" destination="M7m-Oo-eYA" id="5HU-nu-TDH"/>
                 <outlet property="textMessage" destination="QMI-1U-Fqq" id="fVD-IC-XbA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -27,6 +26,9 @@
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="tfDidEndOnExit:" destination="-1" eventType="editingDidEndOnExit" id="yez-Uz-aWA"/>
+                    </connections>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yEF-Sn-UXT">
                     <rect key="frame" x="139" y="186" width="97" height="30"/>
@@ -38,31 +40,6 @@
             </subviews>
             <color key="backgroundColor" red="1" green="0.18451732438593016" blue="0.18987684080418432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <point key="canvasLocation" x="33.5" y="54.5"/>
-        </view>
-        <view contentMode="scaleToFill" id="M7m-Oo-eYA">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4M-sJ-eBG">
-                    <rect key="frame" x="8" y="7" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="100"/>
-                    <connections>
-                        <action selector="btnOnClick:" destination="-1" eventType="touchUpInside" id="Mqs-lE-QOa"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOK-8F-FYQ">
-                    <rect key="frame" x="62" y="7" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="200"/>
-                    <connections>
-                        <action selector="btnOnClick:" destination="-1" eventType="touchUpInside" id="XSb-L6-VeP"/>
-                    </connections>
-                </button>
-            </subviews>
-            <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="34" y="515"/>
         </view>
     </objects>
 </document>

@@ -11,6 +11,7 @@
 		587CA0521E5ED7D1008A4669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 587CA0511E5ED7D1008A4669 /* Assets.xcassets */; };
 		587CA05E1E5ED81C008A4669 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587CA05C1E5ED81C008A4669 /* ViewController.swift */; };
 		587CA05F1E5ED81C008A4669 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 587CA05D1E5ED81C008A4669 /* ViewController.xib */; };
+		587CA0611E5EFB5C008A4669 /* KeyboardFollowVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587CA0601E5EFB5C008A4669 /* KeyboardFollowVIew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		587CA0561E5ED7D1008A4669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		587CA05C1E5ED81C008A4669 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		587CA05D1E5ED81C008A4669 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		587CA0601E5EFB5C008A4669 /* KeyboardFollowVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardFollowVIew.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				587CA04A1E5ED7D1008A4669 /* AppDelegate.swift */,
 				587CA05C1E5ED81C008A4669 /* ViewController.swift */,
 				587CA05D1E5ED81C008A4669 /* ViewController.xib */,
+				587CA0601E5EFB5C008A4669 /* KeyboardFollowVIew.swift */,
 				587CA0511E5ED7D1008A4669 /* Assets.xcassets */,
 				587CA0561E5ED7D1008A4669 /* Info.plist */,
 			);
@@ -134,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				587CA05E1E5ED81C008A4669 /* ViewController.swift in Sources */,
+				587CA0611E5EFB5C008A4669 /* KeyboardFollowVIew.swift in Sources */,
 				587CA04B1E5ED7D1008A4669 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +281,7 @@
 				587CA05B1E5ED7D1008A4669 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
